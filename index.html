@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<head>
+  <link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/forms/d/1x_3Txum7j6w8236pFuJRcnSteO_Xj4UiUrl1LHnp6Aw/oembed?url=https://docs.google.com/forms/d/1x_3Txum7j6w8236pFuJRcnSteO_Xj4UiUrl1LHnp6Aw/viewform&amp;format=xml">
+  <link href='http://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="site.css"/>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <script src="jquery-1.11.0.min.js"></script>
+  <script src="bjqs-1.3.min.js"></script>
+  <link type="text/css" rel="Stylesheet" href="bjqs.css" />
+
+  <title>Zack &amp; Melissa's Wedding</title>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+
+      $('#comic-slide').bjqs({
+        animtype      : 'slide',
+        height        : 640,
+        width         : 640,
+        responsive    : true,
+        automatic     : false,
+        randomstart   : false
+      });  
+      
+      $('#photo-slide').bjqs({
+        animtype      : 'slide',
+        height        : 480,
+        width         : 640,
+        responsive    : true
+      });
+        
+
+      var win  = $(window),
+      fxel     = $('nav'),
+      eloffset = fxel.offset().top;
+
+      win.scroll(function() {5
+        if (eloffset < win.scrollTop()) {
+          fxel.addClass("fixed");
+        } else {
+          fxel.removeClass("fixed");
+        }
+      });
+
+      $(".scroll").click(function (event) {
+          event.preventDefault();
+          //calculate destination place
+          var dest = 0;
+          if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+              dest = $(document).height() - $(window).height();
+          } else {
+              dest = $(this.hash).offset().top;
+          }
+          //go to destination
+          $('html,body').animate({
+              scrollTop: dest
+          }, 500, 'swing');
+      });
+    }); // end document.ready
+  </script>
+</head>
+
+<body>
+  <header>
+     <div id="home">
+	     <div class="st-width">
+		      <h1>Zack &amp; Melissa<br> are getting married!</h1>
+	     </div>
+    </div>
+	</header>
+  <nav id="navbar">
+    <div class="st-width">
+      <a class="scroll" id="home" href="#home"><img src="images/home.png" alt="home"></a>
+      <a class="scroll" href="#story">Story</a>
+      <a class="scroll" href="#rsvp">RSVP</a>
+      <a class="scroll" href="#information">Information</a>
+      <a class="scroll" href="#registry">Registry</a>
+      <a class="scroll" href="#photos">Photos</a>
+      <a class="scroll" href="#contact">Contact</a>
+    </div>
+  </nav>
+  <div class="wrapper">
+  	<section class="content" id="story">
+      <div class="st-width">
+  			<h2><strong>Our Story</strong></h2>
+  			<div id="comic-slide">
+          <ul class="bjqs">
+            <li><img src="images/panel2.jpg" title="We ordered each other through the internet, or so it would seem.  Without the world of online dating, our paths would never have crossed.  "alt="We ordered each other through the internet, or so it would seem.  Without the world of online dating, our paths would never have crossed.  "></li>
+            <li><img src="images/panel2.jpg" title="Being that neither of us were from Oklahoma, we daydreamed about adventures in Colorado.  Nature helps us find our place in each other's world.  Now that we're here, our goal is to summit every 14er. One down, fifty two to go!" alt="Being that neither of us were from Oklahoma, we daydreamed about adventures in Colorado.  Nature helps us find our place in each other’s world.  Now that we’re here, our goal is to summit every 14er. One down, fifty two to go!"></li>
+            <li><img src="images/panel2.jpg" title="Melissa got a job Denver and made the move knowing Zack would soon follow.  Absence made our hearts grow fonder...but we aren't anxious to be apart again." alt="Melissa got a job Denver and made the move knowing Zack would soon follow.  Absence made our hearts grow fonder...but we aren’t anxious to be apart again."></li>
+            <li><img src="images/panel2.jpg" title="Life in Colorado opened up great opportunities for us both.  Supporting each other's passions keeps us grounded.  Joplin is pretty happy about it all too." alt="Life in Colorado opened up great opportunities for us both.  Supporting each other’s passions keeps us grounded.  Joplin is pretty happy about it all too."></li>
+            <li><img src="images/panel2.jpg" title="Excitement took hold and all proposal planning went out the window the week Zack got the ring he'd been designing in secret with Melissa's Aunt Kimberly.  He got it on a Tuesday and by Thursday just couldn't wait any longer. &quot;Glad you're home from work! Will you marry me?!&quot;" alt=""></li>
+          </ul>
+        </div>
+  		</div>
+    </section>
+    <section class="content" id="rsvp">
+      <div class="st-width">
+        <div id="invite">
+          <h3>You're invited<br>to attend the wedding of<br><img src="images/lildeco.png"><strong>Zack and Melissa</strong><img src="images/lildeco_r.png"><br>Saturday, August 9th 2014<br>5:00 pm<br>at Centennial Park<br>Denver, Colorado 80204</h3>
+        </div>
+        <h2><strong>RSVP</strong></h2>
+        <div id="schedule" class="sm-width">
+          <h4>Schedule of Events</h4>
+          <dl>
+            <dt>9:30-10:30am</dt>
+            <dd>Breakfast provided at the Hotel</dd>
+            <dt>4:30-5:00pm</dt>
+            <dd>Arrive at Centennial Park<br><aside>Parking available, carpool encouraged.<br>There will be cool treats for you upon arrival.</aside></dd>
+            <dt>5:15pm</dt>
+            <dd>Wedding Ceremony</dd>
+            <dt>6:00-11:00pm</dt>
+            <dd>Dinner, Dancing, and Drinks!<br>at The Forney Museum of Transportation</dd>
+            <dt id="nextday">Next Day Brunch</dt>
+            <dd>Brunch at the Hotel before you head out.</dd>
+          </dl>
+        </div>
+        <iframe src="https://docs.google.com/forms/d/1x_3Txum7j6w8236pFuJRcnSteO_Xj4UiUrl1LHnp6Aw/viewform?embedded=true">Loading...
+        </iframe>
+      </div>
+    </section>
+    <section class="content" id="information">
+      <div class="st-width">
+        <h2><strong>Information</strong></h2>
+        <div class="mid-width">
+          <h4>Lodging</h4>
+          <p>Rooms will be reserved in blocks at <a href="http://www.springhillsuitesdenver.com/">Springhill Suites</a> in downtown Denver for our guests.  We will provide more detail and description once these are confirmed.</p>
+          <h4>Centennial Park</h4>
+          <a href="https://www.google.com/maps/place/Centennial+Park/@39.745997,-105.0149277,14z/data=!4m5!1m2!2m1!1scentennial+park+colorado!3m1!1s0x0:0x50b81af53a0afa18" target="_blank"><img src="images/map.png">See Map</a>
+          <p>The wedding ceremony will take place at Centennial park. Dress for hot weather.</p>
+          <h4>The Forney Museum of Transportation</h4>
+          <a href="https://www.google.com/maps/dir/Centennial+Park,+Denver,+CO+80204/Forney+Museum+of+Transportation,+4303+Brighton+Blvd,+Denver,+CO+80216/@39.7652815,-105.0063407,14z/data=!4m14!4m13!1m5!1m1!1s0x876c78bf782657bb:0x50b81af53a0afa18!2m2!1d-105.009537!2d39.752718!1m5!1m1!1s0x876c79085673793d:0x75ef3f858f4ca3c3!2m2!1d-104.971312!2d39.777852!5i2" target="_blank"><img src="images/map.png">See Map</a>
+          <p>This is where we will go for the reception. Carpooling or cab rides are encouraged.</p>
+          <h4>Brunch</h4>
+          <p>We'll be gathering for brunch the morning following the reception at the Springhill Suites starting at 10:00am.  Please join us for the complimentary breakfast and unwind before heading out for the day.  Whether you plan to go to the mountains or fly home, we'd love to see you before you go!
+          </p>
+        </div>
+        <div class="sm-width">
+          <h4>Things to do near downtown Denver</h4>
+          <a href="http://www.mcadenver.org/index.php" target="_blank">Museum of Contemporary Art</a>
+          <aside>Group rates $8 for 10+, open 10AM-5PM Sat &amp; Sun</aside>
+          <a href="http://www.coloradolocalfirst.com/platte" target="_blank">15th &amp; Platte</a>
+          <aside>* Lots of shops and food next to the Platte River just blocks from downtown.</aside>
+          <a href="http://mychildsmuseum.org/" target="_blank">Denver Children's Museum</a>
+          <aside>*Open 10AM-5PM, $7-9 entry, fun for kids and adults</aside>
+          <a href="http://www.aquariumrestaurants.com/downtownaquariumdenver/" target="_blank">Downtown Aquarium</a>
+          <aside>*Open 10AM-9:30PM, $12-18 entry</aside>
+          <a href="http://www.bowlluckystrike.com/" target="_blank">Lucky Strike Bowling Alley - 16th Street Mall</a>
+          <aside>Bowling!</aside>
+          <a href="https://www.elitchgardens.com/" target="_blank">Elitch Gardens</a>
+          <aside>Theme and Water Park</aside>
+        </div>
+        <div class="sm-width">
+          <h4>Places to Eat near Downtown</h4>
+          <a href="http://www.hopsandpie.com/" target="_blank"> Hops and Pie</a>
+          <aside>Amazing Pizza and Local Beers (our favorite place, if you want to drive 10 min from downtown)</aside>
+          <a href="http://www.illegalpetes.com/" target="_blank">Illegal Pete's</a>
+          <aside>Like Qdoba but better with a decor of stickers.</aside>
+          <a href="http://www.brothersbar.com/location_home.cfm" target="_blank">My Brother's Bar</a>
+          <aside>Burgers and Fries straight up</aside>
+          <a href="http://www.wynkoop.com/" target="_blank">Wynkoop</a>
+          <aside>Local brewery and grub. Founded by the Governor of Colorado.</aside>
+          <a href="http://www.monasrestaurant.com/" target="_blank">Mona's</a>
+          <aside>Breakfast, Brunch, Lunch, Amazing.</aside>
+          <a href="http://lingerdenver.com/" target="_blank">Linger</a>
+          <aside>Awesome rooftop patio, groovy inside spaces. Fun fact: it's an old mortuary.</aside>
+          <a href="http://www.littlemanicecream.com/" target="_blank">Little Man Ice Cream</a>
+          <aside>Typically has line around the block it's so good.</aside>
+        </div>
+      </div>
+    </section>
+    <section class="content" id="registry">
+      <div class="st-width">
+        <h2><strong>Registry</strong></h2>
+      </div>
+    </section>
+     <section class="content" id="photos">
+      <div class="st-width">
+        <h2><strong>Engagement Photos</strong></h2>
+       
+        <div id="photo-slide">
+          <ul class="bjqs">
+            <li><img src="images/engage_1.jpg" title="boom shaka" alt=""></li>
+            <li><img src="images/engage_2.jpg" alt=""></li>
+            <li><img src="images/engage_3.jpg" alt=""></li>
+            <li><img src="images/engage_4.jpg" alt=""></li>
+            <li><img src="images/engage_5.jpg" alt=""></li>
+            <li><img src="images/engage_6.jpg" alt=""></li>
+            <li><img src="images/engage_7.jpg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+<footer>
+		<div class="st-width" id="contact">
+			<h4>Contact Us:</h4>
+			<a href="mailto:zackandmelissa2014@gmail.com?Subject=Wedding" target="_top">zackandmelissa2014@gmail.com</a>
+		</div>
+	</footer>
+</body>
+
