@@ -39,7 +39,7 @@ header {
 }
 
 nav {
-	font-family: 'Limelight', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: 'Limelight', Verdana, Geneva, sans-serif;
 }
 
 nav.fixed {
@@ -61,7 +61,7 @@ section {
 }
 
 h1, h3, h4, a {
-	font-family: 'Poiret One','Limelight', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: 'Poiret One','Limelight', Verdana, Geneva, sans-serif;
 	text-transform: uppercase;
 }
 
@@ -71,7 +71,7 @@ h1 {
 }
 
 h2,dt {
-	font-family: 'Limelight', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: 'Limelight', Verdana, Geneva, sans-serif;
 	color: #F1F2E9;
 	text-transform: uppercase;
 }
