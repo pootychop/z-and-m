@@ -299,8 +299,9 @@ nav#navbar a + a + a{
 	text-transform:  none; 
 }	
 
-#information a img {
-	float: left;
+.map {
+	padding-left: 24px;
+	background: url('images/map.png') no-repeat left;
 }
 
 #registry {
