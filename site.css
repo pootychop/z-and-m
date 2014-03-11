@@ -343,8 +343,7 @@ iframe {
 
 #comic-slide p {
 	color: #F1F2E9;
-	background: #32322D;
-	opacity: 0.6; 
+	height: 120px;
 }
 
 footer h4 {
