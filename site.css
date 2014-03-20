@@ -323,6 +323,12 @@ nav#navbar a + a + a{
 	background: url('images/map.png') no-repeat left;
 }
 
+#directions {
+	height: 274px;
+	width: 380px;
+}
+
+
 #registry {
 	text-align: center;
 }
@@ -332,10 +338,6 @@ nav#navbar a + a + a{
 	padding-top: 18px;
 }
 
-#information iframe {
-	width: 380px;
-	height: 240px;
-}
 
 #information .sm-width aside {
 	padding-bottom: 30px;
