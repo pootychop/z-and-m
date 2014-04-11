@@ -333,6 +333,24 @@ nav#navbar a + a + a{
 	text-align: center;
 }
 
+#registry a {
+	color: #32322D;
+	font-size: 36px;
+	background: #98B591;
+	padding: 10px;
+	border-radius: 12px;
+	box-shadow: 1px 1px 2px #8A906D;
+}
+
+#registry a:hover {
+	text-decoration: none;
+	background-color: #8AA983;
+} 
+
+#registry a:active {
+	background-color: #72916A;
+}
+
 #nextday {
 	border-top: 1px solid #978C9A;
 	padding-top: 18px;
