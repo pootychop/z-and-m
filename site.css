@@ -336,6 +336,7 @@ nav#navbar a + a + a{
 #registry a {
 	color: #32322D;
 	font-size: 36px;
+	letter-spacing: 2px;
 	background: #98B591;
 	padding: 10px;
 	border-radius: 12px;
