@@ -334,11 +334,13 @@ nav#navbar a + a + a{
 }
 
 #registry a {
+	display: inline-block;
+	margin: 60px 0;
 	color: #32322D;
 	font-size: 36px;
 	letter-spacing: 2px;
 	background: #98B591;
-	padding: 10px;
+	padding: 14px;
 	border-radius: 12px;
 	box-shadow: 1px 1px 2px #8A906D;
 }
