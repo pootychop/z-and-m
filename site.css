@@ -339,28 +339,24 @@ nav#navbar a + a + a{
 	color: #32322D;
 	font-size: 36px;
 	letter-spacing: 2px;
+	box-shadow: inset 0px 2px 2px #98B591;
 	background: -webkit-linear-gradient(#98B591, #8AA983); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#98B591, #8AA983); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#98B591, #8AA983); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#98B591, #8AA983); /* Standard syntax (must be last) */
 	padding: 14px;
 	border-radius: 12px;
-	box-shadow: 1px 1px 2px #8A906D;
+	border: 2px solid #21211E;
 }
 
 #registry a:hover {
 	text-decoration: none;
-	background: -webkit-linear-gradient(#98B591, #72916A); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#98B591, #72916A); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#98B591, #72916A); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#98B591, #72916A); /* Standard syntax (must be last) */
+	background: #8AA983;
 } 
 
 #registry a:active {
-	background: -webkit-linear-gradient(#72916A, #8AA983); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#72916A, #8AA983); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#72916A, #8AA983); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#72916A, #8AA983); /* Standard syntax (must be last) */
+	box-shadow: inset 0px 2px 3px #64825D;
+	background: #85A37E;
 }
 
 #nextday {
