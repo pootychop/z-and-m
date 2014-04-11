@@ -339,7 +339,10 @@ nav#navbar a + a + a{
 	color: #32322D;
 	font-size: 36px;
 	letter-spacing: 2px;
-	background: #98B591;
+	background: -webkit-linear-gradient(#98B591, #8AA983); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#98B591, #8AA983); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#98B591, #8AA983); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#98B591, #8AA983); /* Standard syntax (must be last) */
 	padding: 14px;
 	border-radius: 12px;
 	box-shadow: 1px 1px 2px #8A906D;
@@ -351,7 +354,10 @@ nav#navbar a + a + a{
 } 
 
 #registry a:active {
-	background-color: #72916A;
+	background: -webkit-linear-gradient(#72916A, #8AA983); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#72916A, #8AA983); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#72916A, #8AA983); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#72916A, #8AA983); /* Standard syntax (must be last) */
 }
 
 #nextday {
