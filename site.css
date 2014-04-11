@@ -350,7 +350,10 @@ nav#navbar a + a + a{
 
 #registry a:hover {
 	text-decoration: none;
-	background-color: #8AA983;
+	background: -webkit-linear-gradient(#98B591, #72916A); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#98B591, #72916A); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#98B591, #72916A); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#98B591, #72916A); /* Standard syntax (must be last) */
 } 
 
 #registry a:active {
