@@ -28,7 +28,6 @@
 
 
 body {
-	background: #32322D;
 	margin: 0px;	
 }
 
@@ -87,13 +86,11 @@ h2	{
 }
 
 h2 strong {
-
 	font-size: 48px;
 	margin: 0;
 	color: #BCA46F;
 	text-transform: uppercase;
 	padding: 20px;
-	background-color: #32322D;
 }
 
 h3 {
@@ -217,12 +214,10 @@ footer {
 	padding: 60px 0 120px 0;
 }
 
-.content + .content {
-	border-top: 30px solid #F1F2E9;
-}
-
 
 /* --- LAYOUT --- */
+
+/* ---header ---*/
 
 #home {
 	background: url('images/deco.png') no-repeat center;
@@ -267,7 +262,13 @@ nav#navbar a + a + a{
 	border-left: 1px solid #32322D;
 }
 
+/* ---story ---*/
 
+#story, #story h2 strong {
+	background-color: #32322D;
+}
+
+/* ---rsvp ---*/
 
 #invite {
 	margin: 100px 0px;
@@ -299,6 +300,10 @@ nav#navbar a + a + a{
 	clear: left;
 }
 
+#rsvp, #rsvp h2 strong {
+	background-color: #42423E;
+}
+
 #rsvp iframe {
 	width: 560px; 
 	height: 920px;
@@ -308,9 +313,11 @@ nav#navbar a + a + a{
 	padding: 0 0 0 30px;
 }
 
-#overview {
-	display: block;
-	overflow: auto;
+
+/* ---overview ---*/
+
+#overview, #overview h2 strong {
+	background-color: #6D6D69;
 }
 
 #overview p a {
@@ -328,6 +335,9 @@ nav#navbar a + a + a{
 	width: 380px;
 }
 
+#registry, #registry h2 strong {
+	background-color: #8E8E88;
+}
 
 #registry {
 	text-align: center;
@@ -369,8 +379,18 @@ nav#navbar a + a + a{
 	padding-bottom: 30px;
 }
 
-.sm-width#eat {
-	padding: 30px 0 0 30px;  
+#things {
+	overflow: auto;
+}
+
+
+#things, #things h2 strong {
+	background-color: #AFAFAA;
+}
+
+
+#photos, #photos h2 strong {
+	background-color: #D1D1CB;
 }
 
 #photo-slide,
