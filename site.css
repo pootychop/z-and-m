@@ -1,15 +1,21 @@
 /*-- colors
 
+
 #BCA772 -gold
 #CCB98D -light gold
+#AA9565 -dark gold
 #8A906D -deep green
 #8AA983 -med green
 #BCCE97 -lightgreen
 #978C9A -purple
 #B1AA92 -neutral
-#32322D -charcoal
+#32322D -charcoal1
+#42423E -chr2
+#6D6D69 -chr3
+#8E8E88 -chr4
+#AFAFAA -chr5
+#D1D1CB -chr6
 #F1F2E9 -white
-
 
 --*/
 
@@ -90,7 +96,7 @@ h2 strong {
 	margin: 0;
 	color: #BCA46F;
 	text-transform: uppercase;
-	padding: 20px;
+	padding: 10px;
 }
 
 h3 {
@@ -116,7 +122,8 @@ h4{
 }
 
 
-p {
+p { 
+	font-family: Verdana, Geneva, sans-serif;
 	text-align: justify;
 	font-size: 18px;
 	line-height: 24px;
@@ -300,6 +307,11 @@ nav#navbar a + a + a{
 	clear: left;
 }
 
+#nextday {
+	border-top: 1px solid #978C9A;
+	padding-top: 18px;
+}
+
 #rsvp, #rsvp h2 strong {
 	background-color: #42423E;
 }
@@ -315,11 +327,21 @@ nav#navbar a + a + a{
 
 
 /* ---overview ---*/
-
-#overview, #overview h2 strong {
-	background-color: #6D6D69;
+#overview .sm-width aside {
+	padding-bottom: 30px;
 }
 
+#overview, #overview h2 strong {
+	background-color: #D1D1CB;
+}
+
+#overview h4 {
+	color: #32322D;
+}
+
+#overview p{
+	color: #42423E;
+}
 #overview p a {
 	font-family: Verdana, Geneva, sans-serif;
 	text-transform:  none; 
@@ -335,12 +357,15 @@ nav#navbar a + a + a{
 	width: 380px;
 }
 
-#registry, #registry h2 strong {
-	background-color: #8E8E88;
+#overview .sm-width aside {
+	padding-bottom: 30px;
 }
 
-#registry {
+/* ---registry---*/
+
+#registry, #registry h2 strong {
 	text-align: center;
+	background-color: #32322D;
 }
 
 #registry a {
@@ -369,23 +394,12 @@ nav#navbar a + a + a{
 	background: #85A37E;
 }
 
-#nextday {
-	border-top: 1px solid #978C9A;
-	padding-top: 18px;
-}
-
-
-#overview .sm-width aside {
-	padding-bottom: 30px;
+#things, #things h2 strong {
+	background-color: #42423E;
 }
 
 #things {
 	overflow: auto;
-}
-
-
-#things, #things h2 strong {
-	background-color: #AFAFAA;
 }
 
 
