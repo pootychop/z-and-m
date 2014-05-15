@@ -65,7 +65,33 @@ section {
 	margin: 0 auto;
 }
 
-h1, h3, h4, a {
+button {
+	display: inline-block;
+	margin: 60px 0;
+	color: #32322D;
+	font-size: 36px;
+	letter-spacing: 2px;
+	box-shadow: inset 0px 2px 2px #98B591;
+	background: -webkit-linear-gradient(#98B591, #8AA983); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#98B591, #8AA983); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#98B591, #8AA983); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#98B591, #8AA983); /* Standard syntax (must be last) */
+	padding: 14px;
+	border-radius: 12px;
+	border: 2px solid #21211E;
+}
+
+button:hover {
+	text-decoration: none;
+	background: #8AA983;
+} 
+
+button:active {
+	box-shadow: inset 0px 2px 3px #64825D;
+	background: #85A37E;
+}
+
+h1, h3, h4, a, button {
 	font-family: 'Poiret One','Limelight', Verdana, Geneva, sans-serif;
 	text-transform: uppercase;
 }
@@ -373,31 +399,6 @@ nav#navbar a + a + a{
 	background-color: #32322D;
 }
 
-#registry a {
-	display: inline-block;
-	margin: 60px 0;
-	color: #32322D;
-	font-size: 36px;
-	letter-spacing: 2px;
-	box-shadow: inset 0px 2px 2px #98B591;
-	background: -webkit-linear-gradient(#98B591, #8AA983); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#98B591, #8AA983); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#98B591, #8AA983); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#98B591, #8AA983); /* Standard syntax (must be last) */
-	padding: 14px;
-	border-radius: 12px;
-	border: 2px solid #21211E;
-}
-
-#registry a:hover {
-	text-decoration: none;
-	background: #8AA983;
-} 
-
-#registry a:active {
-	box-shadow: inset 0px 2px 3px #64825D;
-	background: #85A37E;
-}
 
 #things, #things h2 strong {
 	background-color: #42423E;
