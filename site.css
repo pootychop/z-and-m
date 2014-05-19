@@ -65,31 +65,6 @@ section {
 	margin: 0 auto;
 }
 
-a.button {
-	display: inline-block;
-	margin: 60px 0;
-	color: #32322D;
-	font-size: 36px;
-	letter-spacing: 2px;
-	box-shadow: inset 0px 2px 2px #98B591;
-	background: -webkit-linear-gradient(#98B591, #8AA983); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#98B591, #8AA983); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#98B591, #8AA983); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#98B591, #8AA983); /* Standard syntax (must be last) */
-	padding: 14px;
-	border-radius: 12px;
-	border: 2px solid #21211E;
-}
-
-a.button:hover {
-	text-decoration: none;
-	background: #8AA983;
-} 
-
-a.button:active {
-	box-shadow: inset 0px 2px 3px #64825D;
-	background: #85A37E;
-}
 
 h1, h3, h4, a, a.button {
 	font-family: 'Poiret One','Limelight', Verdana, Geneva, sans-serif;
@@ -144,7 +119,8 @@ h4{
 	font-size: 24px;
 	color: #F1F2E9;
 	line-height: 28px;
-	padding: 0 0 10px 0;
+	padding: 10px;
+	clear: both;
 }
 
 
@@ -156,7 +132,6 @@ p {
 	color: #BABAB6;
 	padding-bottom: 30px;
 }
-
 
 dl {
 	color: #F1F2E9;
@@ -195,6 +170,7 @@ a {
 	text-decoration: underline;
 }
 
+
 nav#navbar a:hover {
 	color: #8A906D;
 	text-decoration: underline;
@@ -203,6 +179,32 @@ nav#navbar a:hover {
 nav#navbar a:active, a:active {
 	color: #BCA772;
 	text-decoration: underline;
+}
+
+a.button {
+	display: inline-block;
+	margin: 60px 0;
+	color: #32322D;
+	font-size: 36px;
+	letter-spacing: 2px;
+	box-shadow: inset 0px 2px 2px #98B591;
+	background: -webkit-linear-gradient(#98B591, #8AA983); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#98B591, #8AA983); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#98B591, #8AA983); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#98B591, #8AA983); /* Standard syntax (must be last) */
+	padding: 20px;
+	border-radius: 12px;
+	border: 2px solid #21211E;
+}
+
+a.button:hover {
+	text-decoration: none;
+	background: #8AA983;
+} 
+
+a.button:active {
+	box-shadow: inset 0px 2px 3px #64825D;
+	background: #85A37E;
 }
 
 
@@ -231,11 +233,11 @@ footer {
 	display: inline;
 	float: left;
 	margin: 0 auto;
-	padding: 30px 60px 0 0;
+	padding: 30px 15px;
 }
 
 .mid-width + .mid-width {
-	padding: 30px 0 0 30px;
+	float: right;
 }
 
 .sm-width {
@@ -343,7 +345,7 @@ nav#navbar a + a + a{
 	padding-top: 18px;
 }
 
-#rsvp, #rsvp h2 strong {
+#rsvp, #rsvp h2 strong, #things, #things h2 strong {
 	background-color: #42423E;
 }
 
@@ -358,16 +360,19 @@ nav#navbar a + a + a{
 
 
 /* ---overview ---*/
+
+
 #overview .sm-width aside {
 	padding-bottom: 30px;
 }
 
-#overview, #overview h2 strong {
+#overview, #overview h2 strong, #photos, #photos h2 strong {
 	background-color: #D1D1CB;
 }
 
 #overview h4 {
 	color: #32322D;
+	background-color: #8AA983;
 }
 
 #overview p{
@@ -388,9 +393,6 @@ nav#navbar a + a + a{
 	width: 380px;
 }
 
-#overview .sm-width aside {
-	padding-bottom: 30px;
-}
 
 /* ---registry---*/
 
@@ -399,19 +401,12 @@ nav#navbar a + a + a{
 	background-color: #32322D;
 }
 
-
-#things, #things h2 strong {
-	background-color: #42423E;
-}
-
 #things {
 	overflow: auto;
 }
 
+/* ---photos---*/
 
-#photos, #photos h2 strong {
-	background-color: #D1D1CB;
-}
 
 #photo-slide,
 #comic-slide {
