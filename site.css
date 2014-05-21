@@ -362,8 +362,8 @@ nav#navbar a + a + a{
 /* ---overview ---*/
 
 
-#overview .sm-width aside {
-	padding-bottom: 30px;
+#overview aside {
+	color: #AA9565;
 }
 
 #overview, #overview h2 strong, #photos, #photos h2 strong {
