@@ -381,6 +381,12 @@ nav#navbar a + a + a{
 #overview p a {
 	font-family: Verdana, Geneva, sans-serif;
 	text-transform:  none; 
+}
+
+#overview a.button {
+	margin: 0 0 20px 0;
+	border: 2px solid #8E8E88;
+
 }	
 
 .infochunk {
