@@ -38,6 +38,7 @@ body {
 	background-color: #32322D ;	
 }
 
+
 header {
 	background: #F1F2E9;
 	text-align: right;
@@ -99,6 +100,7 @@ h2 strong {
 	color: #BCA46F;
 	text-transform: uppercase;
 	padding: 10px;
+	background-color: #32322D;
 }
 
 h3 {
