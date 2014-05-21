@@ -372,7 +372,7 @@ nav#navbar a + a + a{
 
 #overview h4 {
 	color: #32322D;
-	background-color: #8AA983;
+	background-color: #978C9A;
 }
 
 #overview p{
@@ -382,6 +382,10 @@ nav#navbar a + a + a{
 	font-family: Verdana, Geneva, sans-serif;
 	text-transform:  none; 
 }	
+
+.infochunk {
+	padding-bottom: 30px;
+}
 
 .map {
 	padding-left: 24px;
