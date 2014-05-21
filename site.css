@@ -364,6 +364,9 @@ nav#navbar a + a + a{
 
 /* ---overview ---*/
 
+#overview img {
+	float: left;
+}
 
 #overview aside {
 	color: #AA9565;
@@ -392,19 +395,18 @@ nav#navbar a + a + a{
 }	
 
 .infochunk {
-	padding-bottom: 60px;
+	padding: 30px 0 60px 0;
+	overflow: auto;
+}
+
+.infochunk + .infochunk {
+	border-top: 3px solid #BCA46F;
 }
 
 .map {
 	padding-left: 24px;
 	background: url('images/map.png') no-repeat left;
 }
-
-#directions {
-	height: 274px;
-	width: 380px;
-}
-
 
 /* ---registry---*/
 
