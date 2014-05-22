@@ -121,7 +121,7 @@ h4{
 	font-size: 24px;
 	color: #F1F2E9;
 	line-height: 28px;
-	padding: 20px 0px;
+	padding: 0 0 20px 0px;
 }
 
 
@@ -164,6 +164,11 @@ a {
 	font-weight: 24px;
 	line-height: 24px;
 	color: #8AA983;
+}
+
+.map {
+	padding: 8px 24px;
+	background: url('images/map.png') no-repeat left;
 }
 
  a:hover {
@@ -241,7 +246,6 @@ footer {
 .mid-width {
 	width: 580px;
 	margin: 0 auto;
-	padding: 30px 0;
 	float: right;
 }
 
