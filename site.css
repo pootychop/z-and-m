@@ -160,6 +160,7 @@ aside {
  	padding-bottom:  20px;
 }
 
+
 a {
 	text-decoration: none;
 	font-weight: 24px;
@@ -423,6 +424,10 @@ nav#navbar a + a + a{
 
 #things {
 	overflow: auto;
+}
+
+#gratitude aside {
+	text-align: center;
 }
 
 /* ---photos---*/
