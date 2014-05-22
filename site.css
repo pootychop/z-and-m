@@ -58,7 +58,6 @@ nav.fixed {
 }
 
 img {
-	display: block;
 	margin: 0 auto;
 }
 
@@ -122,8 +121,7 @@ h4{
 	font-size: 24px;
 	color: #F1F2E9;
 	line-height: 28px;
-	padding: 10px;
-	clear: both;
+	padding: 20px 0px;
 }
 
 
@@ -231,28 +229,34 @@ footer {
 	margin: 0 auto;
 }
 
-.mid-width {
-	width: 380px;
-	display: inline;
-	float: left;
-	margin: 0 auto;
-	padding: 30px 15px;
+.infochunk {
+	padding: 30px 0 60px 0;
+	overflow: auto;
 }
 
-.mid-width + .mid-width {
+.infochunk + .infochunk {
+	border-top: 3px solid #BCA46F;
+}
+
+.mid-width {
+	width: 580px;
+	margin: 0 auto;
+	padding: 30px 0;
 	float: right;
 }
 
+.sm-width + .sm-width {
+	float: right;
+}
+
+
 .sm-width {
-	width: 180px;
-	display: inline;
-	float: left;
+	width: 400px;
 	margin: 0 auto;
-	padding: 30px 30px 0 30px;
+	float: left;
 }
 
 .content{
-	color: #B1AA92;
 	font-family: Verdana, Geneva, sans-serif;
 	padding: 60px 0 120px 0;
 }
@@ -337,6 +341,7 @@ nav#navbar a + a + a{
 }
 
 #schedule {
+	width: 180px;
 	padding: 76px 30px;
 	float: left;
 	line-height: 45px;
@@ -354,7 +359,7 @@ nav#navbar a + a + a{
 
 #rsvp iframe {
 	width: 560px; 
-	height: 920px;
+	height: 930px;
 	display: inline-block;
 	border: 0px;
 	border-style: none;
@@ -366,6 +371,8 @@ nav#navbar a + a + a{
 
 #overview img {
 	float: left;
+	height: 250px;
+	width: 250px;
 }
 
 #overview aside {
@@ -391,21 +398,10 @@ nav#navbar a + a + a{
 #overview a.button {
 	margin: 0 0 20px 0;
 	border: 2px solid #8E8E88;
-
 }	
 
-.infochunk {
-	padding: 30px 0 60px 0;
-	overflow: auto;
-}
-
-.infochunk + .infochunk {
-	border-top: 3px solid #BCA46F;
-}
-
-.map {
-	padding-left: 24px;
-	background: url('images/map.png') no-repeat left;
+#overview .mid-width {
+	float: right;
 }
 
 /* ---registry---*/
