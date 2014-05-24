@@ -136,7 +136,7 @@ p {
 }
 
 dl {
-	width: 150px;
+	width: 120px;
 	color: #F1F2E9;
 	float: left;
 	padding: 30px;
@@ -359,6 +359,7 @@ nav#navbar a + a + a{
 }
 
 #nextday {
+	width: 250px;
 	border-left: 1px solid #978C9A;
 	float: right;
 }
