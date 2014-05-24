@@ -369,10 +369,7 @@ nav#navbar a + a + a{
 }
 
 #rsvp iframe {
-	width: 560px; 
-	height: 930px;
 	display: inline-block;
-	border: 0px;
 	border-style: none;
 	float: right; 
 }
